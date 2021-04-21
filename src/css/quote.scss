@@ -1,0 +1,82 @@
+/* Styling  Quotes */
+
+@import 'config';
+
+.container {
+    width: $view-port-width;
+    height: $view-port-height;
+    @include flex-box($column, center, center);
+    background-color: $background-color;
+    background-image: $background-img;
+}
+
+.quote-box {
+    width: $quote-width;
+    height: auto;
+    margin-top: $quote-top-spacer;
+    @include flex-box($column, center, center);
+}
+
+.body-box {
+    width: auto;
+    height: 200px;
+    @include flex-box($column, flex-end, center);
+}
+
+.text {
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    border-left: 4px solid $theme-green;
+    box-sizing: border-box;
+    padding: 10px;
+    color: $quote-font-color;
+    text-align:end;
+    font-size: $quote-font-size;
+    font-style: $quote-font-style;
+    text-align:justify;
+}
+
+.author {
+    background-color: $caption-color;
+    font-size: $caption-font-size;
+    color: $caption-font-color;
+    font-style: $quote-font-style;
+    width: auto;
+    text-align: right;
+    height: 21px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 1px;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.controls {
+    @include flex-box($row, center, center);
+    margin-top: 50px;
+    width: $full-width;
+    font-size: 1.4em;
+}
+
+.twitter > a {
+    color: $twitter-logo-color;
+}
+
+.twitter > a:hover {
+    color: $twitter-darker-blue;
+}
+
+.next-btn {
+    margin-left: 10px;
+    color: $theme-green;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    font-size: 1.1em;
+    outline: none;
+}
+
+.next-btn:hover {
+    color: $caption-color;
+}

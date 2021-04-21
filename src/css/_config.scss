@@ -1,0 +1,33 @@
+/* Quote style settings */
+
+$background-img: url('../img/bw.jpg');
+$background-color: #d9d9d9;
+$theme-green: olivedrab;
+$quote-width: 600px;
+$quote-top-spacer: 100px;
+$column: column nowrap;
+$row: row nowrap;
+$full-width: 100%;
+$full-height: 100%;
+$view-port-width: 100vw;
+$view-port-height: 100vh;
+$quote-font-color: #666;
+$quote-font-size: 1.1.8em;
+$quote-font-style: italic;
+$caption-color: indianred;
+$caption-font-size: 0.92em;
+$caption-font-color: #e6e6e6;
+@mixin flex-box($orientation, $x, $y) {
+    display: flex;
+    flex-flow: $orientation;
+    @if $orientation == $column {
+        justify-content: $y;
+        align-items: $x;
+    }
+    @else if $orientation == $row {
+        justify-content: $x;
+        align-items: $y;
+    }
+}
+$twitter-logo-color: #00aced;
+$twitter-darker-blue: #0084b4
